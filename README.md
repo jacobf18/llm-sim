@@ -13,4 +13,4 @@ We modify and extend existing benchmarks to evaluate the performance of LLM-Sim.
 
 The system architecture of LLM-Sim is given in the following figure:
 
-![System architecture](./LLM-Sim.pdf)
+![System architecture](./LLM-Sim.png)
