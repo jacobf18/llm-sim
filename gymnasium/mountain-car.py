@@ -9,7 +9,13 @@ The Mountain Car MDP is a deterministic MDP that consists of a car placed stocha
 # position_{t+1} = position_t + velocity_{t+1}
 
 env = gym.make("MountainCar-v0", render_mode="human")
+
 observation, info = env.reset()
+
+# We can access the gravity parameter of the environment through
+# the unwrapped attribute of the environment
+# print(env.unwrapped.gravity)
+# The default value is 0.0025
 
 episode_over = False
 while not episode_over:
