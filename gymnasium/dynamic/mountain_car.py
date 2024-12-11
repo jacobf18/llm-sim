@@ -16,13 +16,13 @@ class DynamicMountainCarEnv(MountainCarEnv):
 
     def step(self, action, **kwargs):
         self.steps += 1
-        if self.steps == 100:
+        if self.steps == 250:
             print('Low gravity')
             self.gravity = self.low_gravity
-        elif self.steps == 200:
+        elif self.steps == 500:
             print('Medium gravity')
             self.gravity = self.medium_gravity
-        elif self.steps == 300:
+        elif self.steps == 750:
             print('High gravity')
             self.gravity = self.high_gravity
         return super(DynamicMountainCarEnv, self).step(action, **kwargs)
