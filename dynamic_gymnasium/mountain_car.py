@@ -15,6 +15,12 @@ class DynamicMountainCarEnv(MountainCarEnv):
         self.steps = 0
 
     def step(self, action, **kwargs):
+        """Move one time step forward. Change the gravity of the environment
+        at specific time steps.
+
+        Args:
+            action (int): Action to take.
+        """
         self.steps += 1
         if self.steps == 250:
             print('Low gravity')
